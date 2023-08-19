@@ -1,0 +1,37 @@
+h1 {
+    color: red;
+    text-align: center;
+}
+
+h1:hover{ /*cuando pasas el mouse por encima:*/
+    color:blue;
+}
+
+a{
+    color:aqua
+}
+
+a:link{/*va a tomar estos atributos cuando un link no fue visitado*/
+    color:gray;
+}
+
+a:active{ /*atributos que toma cuando clickeas*/
+    color:green;
+}
+
+a:visited{/*atributos que toma cuando el link ya haya sido visitado*/
+    color:blueviolets
+}
+
+div:not(.padre){ /*le aplica a todos los div menos a "padre"*/
+    border:none;
+}
+
+.padre div:nth-child(2){ /*al div que este en al la segunda posicion le van a aplicar estos atributos*/
+    color:red;
+}
+
+/*METODOLOGIA BEM
+    Es una forma de rotular las clases donde poner el contenedor mas grande, dos guiones bajo y el ultimo contenedor. 
+    Por ejemplo: class=header__ul
+    Tambien puede ser: class=header_nav_ul
